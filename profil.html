@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Nadila Ramadani</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .profil-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin: 30px 0 50px;
+        }
+        
+        .profil-img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px solid var(--gold);
+        }
+        
+        .profil-name {
+            color: #0f172a;
+            font-size: 2.5rem;
+            border-bottom: 3px solid var(--gold);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .info-item {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-left: 5px solid var(--gold);
+            transition: all 0.3s ease;
+        }
+        
+        .info-item:hover {
+            background: var(--gold);
+            transform: translateY(-5px);
+        }
+        
+        .info-item i {
+            font-size: 28px;
+            color: var(--gold);
+        }
+        
+        .info-item:hover i {
+            color: #0f172a;
+        }
+        
+        .pendidikan-item {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid var(--gold);
+            margin: 20px 0;
+        }
+        
+        .pendidikan-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .deskripsi-box {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 20px;
+            border-left: 5px solid var(--gold);
+            margin-top: 20px;
+        }
+        
+        .deskripsi-box p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #475569;
+        }
+        
+        @media (max-width: 992px) {
+            .profil-container {
+                grid-template-columns: 1fr;
+                padding: 30px;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .pendidikan-list {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .profil-name {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <i class="bi bi-moon-stars-fill"></i>
+            Nadila Ramadani
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profil.html" class="active">Profil</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="cerita.html">Cerita</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="page-header">
+    <div class="container">
+        <h1>Profil Nadila Ramadani</h1>
+    </div>
+</div>
+
+<section class="container">
+    <div class="profil-container">
+        <div>
+            <img src="https://picsum.photos/id/102/400/450" alt="Nadila Ramadani" class="profil-img">
+        </div>
+        <div class="profil-info">
+            <h1 class="profil-name">Nadila Ramadani</h1>
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="bi bi-calendar3"></i>
+                    <div>
+                        <h4>Tempat, Tanggal Lahir</h4>
+                        <p>Aur Kuning, 29 Oktober 2003</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="bi bi-heart"></i>
+                    <div>
+                        <h4>Hobi</h4>
+                        <p>Bulu Tangkis</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="bi bi-stars"></i>
+                    <div>
+                        <h4>Cita-cita</h4>
+                        <p>Pengusaha Sukses</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="bi bi-person-badge"></i>
+                    <div>
+                        <h4>Status</h4>
+                        <p>Mahasiswi UIN Bukittinggi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pendidikan-item">
+                <h4><i class="bi bi-book"></i> Riwayat Pendidikan</h4>
+                <div class="pendidikan-list">
+                    <p><i class="bi bi-check-circle-fill"></i> SDN 18 Angge Palimbaktan</p>
+                    <p><i class="bi bi-check-circle-fill"></i> SMP Negeri 1 Palupuh</p>
+                    <p><i class="bi bi-check-circle-fill"></i> SMA Negeri 1 Palupuh</p>
+                    <p><i class="bi bi-check-circle-fill"></i> UIN Bukittinggi (Sekarang)</p>
+                </div>
+            </div>
+            <div class="deskripsi-box">
+                <h3><i class="bi bi-chat-quote"></i> Tentang Saya</h3>
+                <p>Saya Nadila Ramadani dengan NIM 2523166 dari kelas PTIK 6E. Saya merupakan mahasiswa Program Studi Pendidikan Teknik Informatika dan Komputer.</p>
+                <p>Website ini saya buat sebagai tugas mata kuliah Web Programming yang diampu oleh Ibu Efmi Maiyana, S.Kom., M.Kom.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="social-icons">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="video.html">Video</a>
+            <a href="cerita.html">Cerita</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+        <p>&copy; 2026 Nadila Ramadani - Selamat Hari Raya Idul Fitri 1447 H</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
